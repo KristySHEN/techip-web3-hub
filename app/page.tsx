@@ -12,7 +12,7 @@ import { Wallet, Target, TrendingUp, CheckCircle, AlertCircle } from "lucide-rea
 // TODO: Replace with your deployed contract address on Fuji
 // After deploying via Remix + MetaMask, paste address below
 // ============================================================
-const CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000" // PLACEHOLDER - REPLACE ME
+const CONTRACT_ADDRESS = "0x25044a6e0b2652feAA72D284400C86863a4d9885"
 const FUJI_CHAIN_ID = 43113
 const FUJI_RPC = "https://api.avax-test.network/ext/bc/C/rpc"
 
@@ -62,7 +62,7 @@ export default function TechIPFundingApp() {
   }
 
   const handleInvest = async () => {
-    if (CONTRACT_ADDRESS === "0x0000000000000000000000000000000000000000") {
+    if (CONTRACT_ADDRESS === "0x25044a6e0b2652feAA72D284400C86863a4d9885") {
       setStatus("Contract not deployed yet. Please deploy and update CONTRACT_ADDRESS in page.tsx")
       return
     }
@@ -105,7 +105,7 @@ export default function TechIPFundingApp() {
               <span>
                 <strong>Contract Address:</strong>{" "}
                 <code className="font-mono">{CONTRACT_ADDRESS}</code>
-                {CONTRACT_ADDRESS === "0x0000000000000000000000000000000000000000" && (
+                {CONTRACT_ADDRESS === "0x25044a6e0b2652feAA72D284400C86863a4d9885" && (
                   <span className="ml-2 text-orange-300">(placeholder - deploy contract first)</span>
                 )}
               </span>
